@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "hotelLevels",
+  "info": {
+    "name": "hotellevel",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "level": {
+      "default": "",
+      "type": "integer"
+    },
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "hotels": {
+      "collection": "hotel",
+      "via": "hotellevel"
+    }
+  }
+}

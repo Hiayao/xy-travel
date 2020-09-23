@@ -1,0 +1,104 @@
+.layoutItem {
+    .ant-popover-inner-content {
+        padding: 0 !important;
+    }
+}
+
+.home_All {
+    svg {
+        width: 24px !important;
+        height: 24px !important;
+    }
+}
+
+.SearchOutlined {
+    svg {
+        width: 24px !important;
+        height: 24px !important;
+        color: orange;
+    }
+}
+
+.detailIco {
+    svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.gobackAll {
+    .ant-input {
+        height: 42px;
+    }
+
+    .ant-calendar-picker-input {
+        width: 236.84px;
+    }
+
+    .ant-select-auto-complete.ant-select .ant-input {
+        width: 236.84px;
+        height: 42px;
+    }
+
+    // .ant-select-search__field{
+    //     width: 236.84px;
+    // }
+}
+
+.down {
+    .ant-btn-primary {
+        border-color: orange;
+        background: orange;
+    }
+}
+
+.history_btn {
+    .ant-btn-primary {
+        border-color: orange;
+        background: orange;
+    }
+    padding: 10px 0 ;
+}
+.onefoone{
+    .ant-select-selection.ant-select-selection--single{
+        height: 44px !important;
+        display: flex;
+        align-items: center;
+    }
+    .ant-input{
+        height: 44px;
+    }
+}
+.contacts{
+    .ant-input {
+        height: 42px;
+    }
+    .ant-form-item{
+        display: flex;
+    }
+    .ant-form-item-children{
+        display: flex;
+    }
+    .fasong.ant-btn{
+        height: 42px;
+    }
+    .ant-col.ant-form-item-label{
+        width: 90px;
+    }
+}
+.hotelBox{
+    .ant-calendar-picker-input.ant-input{
+        height: 42px;
+    }
+    .ant-input{
+        height: 42px;
+    }
+}
+.createOne{
+    .ant-input{
+        height: 42px;
+    }
+    .ant-select-auto-complete.ant-select .ant-input{
+        height: 42px;
+    }
+}

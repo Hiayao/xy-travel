@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/discountries",
+      "handler": "Discountry.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/discountries/count",
+      "handler": "Discountry.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/discountries/:id",
+      "handler": "Discountry.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/discountries",
+      "handler": "Discountry.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/discountries/:id",
+      "handler": "Discountry.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/discountries/:id",
+      "handler": "Discountry.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

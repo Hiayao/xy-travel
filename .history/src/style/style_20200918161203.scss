@@ -1,0 +1,36 @@
+.layoutItem {
+    .ant-popover-inner-content {
+        padding: 0 !important;
+    }
+}
+
+.home_All {
+    svg {
+        width: 24px !important;
+        height: 24px !important;
+    }
+}
+.SearchOutlined{
+    svg {
+        width: 24px !important;
+        height: 24px !important;
+        color: orange;
+    }
+}
+.detailIco{
+    svg{
+	width: 30px;
+	height: 30px;
+    }
+}
+.gobackAll{
+    .ant-input{
+        height: 42px;
+    }
+    .ant-calendar-picker-input{
+        width: 236.84px;
+    }
+    .ant-select-auto-complete{
+        width: 236.84px;
+    }
+}

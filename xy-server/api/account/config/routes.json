@@ -1,0 +1,85 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/accounts/login",
+      "handler": "Account.login",
+      "config": {
+        "policies": [
+          "plugins.users-permissions.ratelimit"
+        ],
+        "prefix": "",
+        "description": "Login a user using the identifiers username and password",
+        "tag": {
+          "plugin": "users-permissions",
+          "name": "Account"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/accounts/register",
+      "handler": "Account.register",
+      "config": {
+        "policies": [
+          "plugins.users-permissions.ratelimit"
+        ],
+        "prefix": "",
+        "description": "Register a new account with the default role",
+        "tag": {
+          "plugin": "users-permissions",
+          "name": "Accout",
+          "actionType": "create"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/accounts",
+      "handler": "Account.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/accounts/count",
+      "handler": "Account.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/accounts/:id",
+      "handler": "Account.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/accounts",
+      "handler": "Account.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/accounts/:id",
+      "handler": "Account.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/accounts/:id",
+      "handler": "Account.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/scenics/banners",
+      "handler": "Scenic.banners",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scenics",
+      "handler": "Scenic.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scenics/count",
+      "handler": "Scenic.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scenics/:id",
+      "handler": "Scenic.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/scenics",
+      "handler": "Scenic.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/scenics/:id",
+      "handler": "Scenic.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/scenics/:id",
+      "handler": "Scenic.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

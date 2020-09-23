@@ -1,0 +1,65 @@
+{
+  "connection": "default",
+  "collectionName": "comments",
+  "info": {
+    "name": "comment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "account": {
+      "model": "account",
+      "via": "comments"
+    },
+    "content": {
+      "default": "",
+      "type": "text"
+    },
+    "pics": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "like": {
+      "default": "",
+      "type": "integer"
+    },
+    "likeIds": {
+      "default": "",
+      "type": "json"
+    },
+    "score": {
+      "default": "",
+      "type": "json"
+    },
+    "hotel": {
+      "model": "hotel",
+      "via": "comments"
+    },
+    "follow": {
+      "model": "comment",
+      "via": "followed"
+    },
+    "followed": {
+      "collection": "comment",
+      "via": "follow"
+    },
+    "level": {
+      "default": "",
+      "type": "integer"
+    },
+    "post": {
+      "model": "post",
+      "via": "comments"
+    },
+    "type": {
+      "default": "",
+      "type": "integer"
+    }
+  }
+}

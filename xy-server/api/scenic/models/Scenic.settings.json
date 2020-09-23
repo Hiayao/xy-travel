@@ -1,0 +1,53 @@
+{
+  "connection": "default",
+  "collectionName": "scenic",
+  "info": {
+    "name": "scenic",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "location": {
+      "default": "",
+      "type": "json"
+    },
+    "level": {
+      "default": "",
+      "type": "string"
+    },
+    "summary": {
+      "default": "",
+      "type": "string"
+    },
+    "pics": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "province": {
+      "model": "disprovince",
+      "via": "scenics"
+    },
+    "city": {
+      "model": "discity",
+      "via": "scenics"
+    },
+    "hotels": {
+      "collection": "hotel",
+      "via": "scenic"
+    },
+    "posts": {
+      "collection": "post",
+      "via": "scenic"
+    }
+  }
+}

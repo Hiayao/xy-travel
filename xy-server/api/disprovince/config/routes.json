@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/disprovinces",
+      "handler": "Disprovince.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/disprovinces/count",
+      "handler": "Disprovince.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/disprovinces/:id",
+      "handler": "Disprovince.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/disprovinces",
+      "handler": "Disprovince.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/disprovinces/:id",
+      "handler": "Disprovince.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/disprovinces/:id",
+      "handler": "Disprovince.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hotelassets",
+      "handler": "Hotelasset.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hotelassets/count",
+      "handler": "Hotelasset.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hotelassets/:id",
+      "handler": "Hotelasset.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hotelassets",
+      "handler": "Hotelasset.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hotelassets/:id",
+      "handler": "Hotelasset.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hotelassets/:id",
+      "handler": "Hotelasset.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hoteltypes",
+      "handler": "Hoteltype.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hoteltypes/count",
+      "handler": "Hoteltype.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hoteltypes/:id",
+      "handler": "Hoteltype.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hoteltypes",
+      "handler": "Hoteltype.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hoteltypes/:id",
+      "handler": "Hoteltype.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hoteltypes/:id",
+      "handler": "Hoteltype.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

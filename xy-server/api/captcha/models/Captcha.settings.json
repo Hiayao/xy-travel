@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "captchas",
+  "info": {
+    "name": "captcha",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "tel": {
+      "default": "",
+      "type": "string"
+    },
+    "code": {
+      "default": "",
+      "type": "string"
+    },
+    "isValid": {
+      "default": true,
+      "type": "boolean"
+    }
+  }
+}

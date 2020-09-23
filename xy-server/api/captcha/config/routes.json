@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/captchas",
+      "handler": "Captcha.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/captchas/count",
+      "handler": "Captcha.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/captchas/:id",
+      "handler": "Captcha.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/captchas",
+      "handler": "Captcha.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/captchas/:id",
+      "handler": "Captcha.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/captchas/:id",
+      "handler": "Captcha.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

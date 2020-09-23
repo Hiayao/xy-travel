@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "airinsurances",
+  "info": {
+    "name": "airinsurance",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "type": {
+      "default": "",
+      "type": "string"
+    },
+    "price": {
+      "default": "",
+      "type": "float"
+    },
+    "compensation": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

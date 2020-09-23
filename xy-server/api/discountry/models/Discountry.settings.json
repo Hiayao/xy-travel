@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "discountries",
+  "info": {
+    "name": "discountry",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "code": {
+      "default": "",
+      "type": "string"
+    },
+    "parentCode": {
+      "default": "",
+      "type": "string"
+    },
+    "level": {
+      "default": "",
+      "type": "string"
+    },
+    "hotels": {
+      "collection": "hotel",
+      "via": "country"
+    }
+  }
+}

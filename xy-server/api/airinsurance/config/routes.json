@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/airinsurances",
+      "handler": "Airinsurance.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/airinsurances/count",
+      "handler": "Airinsurance.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/airinsurances/:id",
+      "handler": "Airinsurance.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/airinsurances",
+      "handler": "Airinsurance.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/airinsurances/:id",
+      "handler": "Airinsurance.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/airinsurances/:id",
+      "handler": "Airinsurance.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

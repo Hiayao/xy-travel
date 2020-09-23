@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hotellevels",
+      "handler": "Hotellevel.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hotellevels/count",
+      "handler": "Hotellevel.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hotellevels/:id",
+      "handler": "Hotellevel.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hotellevels",
+      "handler": "Hotellevel.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hotellevels/:id",
+      "handler": "Hotellevel.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hotellevels/:id",
+      "handler": "Hotellevel.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

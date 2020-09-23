@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/airorders/pay",
+      "handler": "Airorder.pay",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/airorders/checkpay",
+      "handler": "Airorder.checkpay",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/airorders",
+      "handler": "Airorder.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/airorders/count",
+      "handler": "Airorder.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/airorders/:id",
+      "handler": "Airorder.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/airorders",
+      "handler": "Airorder.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/airorders/:id",
+      "handler": "Airorder.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/airorders/:id",
+      "handler": "Airorder.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

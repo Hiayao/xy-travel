@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "hotelassets",
+  "info": {
+    "name": "hotelasset",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "type": {
+      "default": "",
+      "type": "string"
+    },
+    "hotels": {
+      "collection": "hotel",
+      "dominant": true,
+      "via": "hotelassets"
+    }
+  }
+}

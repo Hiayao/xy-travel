@@ -1,0 +1,65 @@
+{
+  "connection": "default",
+  "collectionName": "posts",
+  "info": {
+    "name": "post",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "content": {
+      "default": "",
+      "type": "text"
+    },
+    "scenic": {
+      "model": "scenic",
+      "via": "posts"
+    },
+    "account": {
+      "model": "account",
+      "via": "posts"
+    },
+    "postkind": {
+      "model": "postkind",
+      "via": "posts"
+    },
+    "banner": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "watch": {
+      "default": 0,
+      "type": "integer"
+    },
+    "comments": {
+      "collection": "comment",
+      "via": "post"
+    },
+    "city": {
+      "model": "discity",
+      "via": "posts"
+    },
+    "like": {
+      "default": 0,
+      "type": "integer"
+    },
+    "likeIds": {
+      "default": "",
+      "type": "json"
+    },
+    "cityName": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

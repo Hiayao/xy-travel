@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/postkinds",
+      "handler": "Postkind.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/postkinds/count",
+      "handler": "Postkind.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/postkinds/:id",
+      "handler": "Postkind.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/postkinds",
+      "handler": "Postkind.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/postkinds/:id",
+      "handler": "Postkind.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/postkinds/:id",
+      "handler": "Postkind.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

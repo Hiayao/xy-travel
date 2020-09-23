@@ -1,0 +1,106 @@
+{
+  "connection": "default",
+  "collectionName": "hotels",
+  "info": {
+    "name": "hotel",
+    "description": "酒店"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "enName": {
+      "default": "",
+      "type": "string"
+    },
+    "isHot": {
+      "default": false,
+      "type": "boolean"
+    },
+    "pics": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "location": {
+      "default": "",
+      "type": "json"
+    },
+    "summary": {
+      "default": "",
+      "type": "string"
+    },
+    "enterTime": {
+      "default": "",
+      "type": "date"
+    },
+    "leftTime": {
+      "default": "",
+      "type": "date"
+    },
+    "buildTime": {
+      "default": "",
+      "type": "date"
+    },
+    "lastBuildTime": {
+      "default": "",
+      "type": "date"
+    },
+    "roomCount": {
+      "default": "",
+      "type": "integer"
+    },
+    "province": {
+      "model": "disprovince",
+      "via": "hotels"
+    },
+    "city": {
+      "model": "discity",
+      "via": "hotels"
+    },
+    "scenic": {
+      "collection": "scenic",
+      "dominant": true,
+      "via": "hotels"
+    },
+    "comments": {
+      "collection": "comment",
+      "via": "hotel"
+    },
+    "hotellevel": {
+      "model": "hotellevel",
+      "via": "hotels"
+    },
+    "hoteltype": {
+      "model": "hoteltype",
+      "via": "hotels"
+    },
+    "hotelbrand": {
+      "model": "hotelbrand",
+      "via": "hotels"
+    },
+    "price": {
+      "default": "",
+      "type": "float"
+    },
+    "country": {
+      "model": "discountry",
+      "via": "hotels"
+    },
+    "scores": {
+      "default": "",
+      "type": "json"
+    },
+    "hotelassets": {
+      "collection": "hotelasset",
+      "via": "hotels"
+    }
+  }
+}

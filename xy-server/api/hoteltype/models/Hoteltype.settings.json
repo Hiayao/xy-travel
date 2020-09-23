@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "hoteltypes",
+  "info": {
+    "name": "hoteltype",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "hotels": {
+      "collection": "hotel",
+      "via": "hoteltype"
+    }
+  }
+}

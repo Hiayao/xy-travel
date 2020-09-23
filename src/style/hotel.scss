@@ -1,0 +1,63 @@
+.arrow {
+  opacity: 0.5;
+}
+
+.wid {
+  width: 200px;
+}
+
+.lookPrice {
+  height: 40px;
+  border-radius: 4px;
+  padding: 12px 20px;
+  margin-left: 20px;
+  background: rgb(64, 158, 255);
+  color: white;
+  cursor: pointer;
+}
+
+.lookPrice:hover {
+  background: rgb(102, 177, 255);
+}
+
+.citys {
+  width: 500px;
+  // height: 46px;
+  // overflow: hidden;
+}
+
+.arroeDown {
+  color: rgb(255, 153, 0);
+}
+
+.ps {
+  color: rgb(204, 204, 204);
+  left: 34px;
+}
+
+#wrapper {
+  width: 440px;
+  height: 250px;
+  margin: 20px 0;
+}
+.photos{
+  height: 210px;
+  width: 320px;
+}
+.stars{
+  color: rgb(255, 153, 0)
+}
+.hotelsItem{
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.productsItem{
+  width: 250px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+.starsImg{
+  width: 14px;
+  height: 14px;
+  margin: 0 1px;
+}

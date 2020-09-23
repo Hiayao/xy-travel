@@ -1,0 +1,62 @@
+{
+  "connection": "default",
+  "collectionName": "accounts",
+  "info": {
+    "name": "account",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "username": {
+      "default": "",
+      "type": "text"
+    },
+    "password": {
+      "default": "",
+      "type": "password"
+    },
+    "email": {
+      "default": "",
+      "type": "email"
+    },
+    "role": {
+      "model": "role",
+      "via": "accounts",
+      "plugin": "users-permissions"
+    },
+    "nickname": {
+      "default": "",
+      "type": "string"
+    },
+    "comments": {
+      "collection": "comment",
+      "via": "account"
+    },
+    "airorders": {
+      "collection": "airorder",
+      "via": "account"
+    },
+    "posts": {
+      "collection": "post",
+      "via": "account"
+    },
+    "starPosts": {
+      "default": "",
+      "type": "json"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "defaultAvatar": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

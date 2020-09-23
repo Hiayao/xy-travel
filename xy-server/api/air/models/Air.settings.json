@@ -1,0 +1,111 @@
+{
+  "connection": "default",
+  "collectionName": "airs",
+  "info": {
+    "name": "air",
+    "description": "航班信息"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "org_city_name": {
+      "default": "",
+      "type": "string"
+    },
+    "dst_city_name": {
+      "default": "",
+      "type": "string"
+    },
+    "airline_name": {
+      "default": "",
+      "type": "string"
+    },
+    "airport_tax_audlet": {
+      "default": "",
+      "type": "float"
+    },
+    "airport_tax_child": {
+      "default": "",
+      "type": "float"
+    },
+    "base_price": {
+      "default": "",
+      "type": "float"
+    },
+    "dst_airport": {
+      "default": "",
+      "type": "string"
+    },
+    "dst_airport_name": {
+      "default": "",
+      "type": "string"
+    },
+    "dst_airport_quay": {
+      "default": "",
+      "type": "string"
+    },
+    "flight_no": {
+      "default": "",
+      "type": "string"
+    },
+    "org_airport": {
+      "default": "",
+      "type": "string"
+    },
+    "org_airport_name": {
+      "default": "",
+      "type": "string"
+    },
+    "org_airport_quay": {
+      "default": "",
+      "type": "string"
+    },
+    "plane_name": {
+      "default": "",
+      "type": "string"
+    },
+    "plane_size": {
+      "default": "",
+      "type": "string"
+    },
+    "seat_infos": {
+      "default": "",
+      "type": "json"
+    },
+    "airorders": {
+      "model": "airorder",
+      "via": "air"
+    },
+    "flights": {
+      "default": "",
+      "type": "json"
+    },
+    "arr_date": {
+      "default": "",
+      "type": "string"
+    },
+    "dep_date": {
+      "default": "",
+      "type": "string"
+    },
+    "arr_datetime": {
+      "default": "",
+      "type": "string"
+    },
+    "arr_time": {
+      "default": "",
+      "type": "string"
+    },
+    "dep_datetime": {
+      "default": "",
+      "type": "string"
+    },
+    "dep_time": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

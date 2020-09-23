@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "postkinds",
+  "info": {
+    "name": "postkind",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "type": {
+      "default": "",
+      "type": "string"
+    },
+    "posts": {
+      "collection": "post",
+      "via": "postkind"
+    }
+  }
+}
